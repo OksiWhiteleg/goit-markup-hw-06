@@ -389,17 +389,21 @@
             </li>
           </ul>
         </div>
-      
       <div class="subscribe container">
-        <h3 class="subscribe-text">Subscribe</h3>
-        <div class="input-button"><input type="email" class="footer-input" placeholder="E-mail">
+        <p class="subscribe-text">Subscribe</p>
+        <form>
+        <div class="input-button">
+          <input type="email" 
+          class="footer-input" 
+          placeholder="E-mail" 
+          required>
           <button class="footer-button" type="submit">Subscribe
             <svg width="24" height="24">
               <use href="./images/icons.svg#icon-Frame"></use>
             </svg>
           </button>
-
         </div>
+        </form>
       </div>
 </div>
     </footer>
@@ -411,7 +415,7 @@
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form>
+        <form class="modal-item">
           <label class="modal-label">
             <span>Name</span>
             <span class="input-wrap">
@@ -421,7 +425,7 @@
                 placeholder=""
                 required
               />
-              <svg class="modal-icon" width="18px" height="18px">
+              <svg class="modal-icon" width="18px" height="24px">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </span>
@@ -435,7 +439,7 @@
                 placeholder=""
                 required
               />
-              <svg class="modal-icon" width="18px" height="18px">
+              <svg class="modal-icon" width="18px" height="24px">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </span>
@@ -447,8 +451,9 @@
                 type="email"
                 class="modal-input"
                 placeholder=""
+                required
               />
-              <svg class="modal-icon" width="18px" height="18px">
+              <svg class="modal-icon" width="18px" height="24px">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </span>
@@ -469,9 +474,10 @@
             name="privacy" 
             id="privacy" 
             class="input-check visualy-hidden" 
-            value="true">
+            value="true"
+            required>
             <label for="privacy" class="label-privacy"> 
-              <span>
+              <span class="check-item">
                 <svg class="check-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-vector"></use></svg></span>
               I accept the terms and conditions of the <a href="" class="link-privacy">Privacy Policy</a>
